@@ -8,7 +8,7 @@ This script performs introgression tests in 4-taxa oriented trees, in a similar 
 #
 This script is written in the R language, and based on the ape package [1], which must be installed. No other installation is needed, just source the script in R.
 
-The function can be called as follow : ABBA_GT(treeset, taxa, Nbs, bplot)
+The function can be called as follow : `ABBA_GT(treeset, taxa, Nbs, bplot)`
 
 treeset : phylogenetic trees contained in a multiphylo object (see ape documentation);
 
