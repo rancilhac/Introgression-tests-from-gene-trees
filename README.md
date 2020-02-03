@@ -28,7 +28,7 @@ The output is a list of several items
 # Rationale
 #
 This test is an adaptation of the Patterson's D statistic test, or ABBA/BABA test, to be used on gene trees from unlinked loci rather than bi-allelic markers. 
-We consider a 4-taxa oriented species tree noted (outgroup, (H1, (H2, H3))). When considering single genes genealogies, two branching patterns are possible in addition to the one concordant with the species tree : either D1=(H2, (H1,H3)) or D2=(H3, (H1, H2)). For unlinked loci, under stochastic processes alone (i.e. ILS), both discordant patterns are expected to be present in the same proportion in the gene trees pool. Thus, an excess of one of these patterns indicates introgression. In a similar way as the ABBA/BABA test, we here calculate a statistic to denote the difference of proportions between both patterns, as follow `(D1-D2)/(D1+D2)`. In the abscence of introgression, this statistic is expected to be equal to zero.
+We consider a 4-taxa oriented species tree noted (outgroup, (H1, (H2, H3))). When considering single genes genealogies, two branching patterns are possible in addition to the one concordant with the species tree : either D1=(H2, (H1,H3)) or D2=(H3, (H1, H2)). For unlinked loci, under stochastic processes alone (i.e. ILS), both discordant patterns are expected to be present in the same proportion in the gene trees pool. Thus, an excess of one of these patterns indicates introgression. In a similar way as the ABBA/BABA test, we here calculate a statistic to describe the difference of proportions between both patterns, as follow `(D1-D2)/(D1+D2)`. In the abscence of introgression, this statistic is expected to be equal to zero.
 
 # References
 #
