@@ -33,6 +33,8 @@ We consider a 4-taxa oriented species tree noted (outgroup, (H1, (H2, H3))). Whe
 
 In a similar way as the ABBA/BABA test, we here calculate a statistic to describe the difference of proportions between both patterns, as follow `(D1-D2)/(D1+D2)`. In the abscence of introgression, this statistic is expected to be equal to zero. If the statistic is greater than zero, it indicates an excess of D1, and thus intregression between H1 and H2. On the contrary, if it is negative, this indicates an excess of D2 and introgression between H2 and H3. The significance of the statistic is assessed with bootstraping, using a user-specified number of replicates.
 
+Since phylogenetic trees can give misleading signal due to various artifacts, we recommand to collapse the poorly supported nodes of the gene trees. The function will automaticaly remove the trees for which the focal nodes are not resolved.
+
 # References
 #
 [1] Green, R.E., Krause, J., Briggs, A.W., Maricic, T., Stenzel, U., Kircher, M.,[...], Pääbo, S., 2010. A draft sequence of the Neandertal genome. Science 328, 710–722. https://dx.doi.org/10.1126/science.1188021 
