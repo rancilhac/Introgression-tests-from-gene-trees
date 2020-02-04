@@ -28,10 +28,15 @@ The output is a list of several items
 # Rationale
 #
 This test is an adaptation of the Patterson's D statistic test, or ABBA/BABA test, to be used on gene trees from unlinked loci rather than bi-allelic markers. 
-We consider a 4-taxa oriented species tree noted (outgroup, (H1, (H2, H3))). When considering single genes genealogies, two branching patterns are possible in addition to the one concordant with the species tree : either D1=(H2, (H1,H3)) or D2=(H3, (H1, H2)). For unlinked loci, under stochastic processes alone (i.e. ILS), both discordant patterns are expected to be present in the same proportion in the gene trees pool. Thus, an excess of one of these patterns indicates introgression. In a similar way as the ABBA/BABA test, we here calculate a statistic to describe the difference of proportions between both patterns, as follow `(D1-D2)/(D1+D2)`. In the abscence of introgression, this statistic is expected to be equal to zero.
+
+We consider a 4-taxa oriented species tree noted (outgroup, (H1, (H2, H3))). When considering single genes genealogies, two branching patterns are possible in addition to the one concordant with the species tree : either D1=(H3, (H1,H2)) or D2=(H2, (H1, H3)). For unlinked loci, under stochastic processes alone (i.e. ILS), both discordant patterns are expected to be present in the same proportion in the gene trees pool. Thus, an excess of one of these patterns indicates introgression. 
+
+In a similar way as the ABBA/BABA test, we here calculate a statistic to describe the difference of proportions between both patterns, as follow `(D1-D2)/(D1+D2)`. In the abscence of introgression, this statistic is expected to be equal to zero. If the statistic is greater than zero, it indicates an excess of D1, and thus intregression between H1 and H2. On the contrary, if it is negative, this indicates an excess of D2 and introgression between H2 and H3. The significance of the statistic is assessed with bootstraping, using a user-specified number of replicates.
 
 # References
 #
-[1]
-[2]
-[3] Ape
+[1] Green, R.E., Krause, J., Briggs, A.W., Maricic, T., Stenzel, U., Kircher, M.,[...], Pääbo, S., 2010. A draft sequence of the Neandertal genome. Science 328, 710–722. https://dx.doi.org/10.1126/science.1188021 
+
+[2] Durand, E.Y., Patterson, N., Reich, D., Slatkin, M., 2011. Testing for ancient admixture between closely related populations. Mol. Biol. Evol. 28, 2239–2252. https://doi.org/10.1093/molbev/msr048 
+
+[3] Paradis, E., Claude, J., Strimmer, K., 2004. APE: analyses of phylogenetics and evolution in R language. Bioinformatics 20, 289–290. https://doi.org/10.1093/bioinformatics/btg412
