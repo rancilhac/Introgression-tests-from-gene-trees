@@ -4,9 +4,11 @@
 #
 This script performs introgression tests in 4-taxa oriented trees, in a similar fashion as ABBA/BABA tests [1,2], but using gene trees as input data instead of SNPs. Thus, it is usefull to investigate introgression signals in large phylogenomic datasets. See the "Rationale" part for more informations on how it works.
 
+When using this script, please cite: Rancilhac, L., Irisarri, I., Angelini, C., Arntzen, J. W., Babik, W., Bossuyt, F., Künzel, S., Lüddecke, T., Pasmans, F., Sanchez, E., Weisrock, D., Veith, M., Wielstra, B., Steinfarz, S., Hofreiter, M., Philippe, H., & Vences. (2020). Phylotranscriptomic evidence for pervasive ancient hybridization among Old World salamanders. Molecular Phylogenetics and Evolution, 106967. https://doi.org/10.1016/j.ympev.2020.106967
+
 # Installation and usage
 #
-This script is written in the R language, and based on the ape package [3], which must be installed. No other installation is needed, just source the script in R.
+This script is written in R language, and based on the ape package [3], which must be installed. No other installation is needed, just source the script in R.
 
 The function can be called as follow : `ABBA_GT(treeset, taxa, Nbs, bplot)`
 
